@@ -1,0 +1,39 @@
+[gd_scene load_steps=2 format=3 uid="uid://d4bsi5f2bahcs"]
+
+[ext_resource type="Script" path="res://Scenes/game_over.gd" id="1_3u223"]
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource("1_3u223")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -46.0
+offset_top = -11.5
+offset_right = 46.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "GAME OVER"
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = 77.0
+offset_right = 4.0
+offset_bottom = 85.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "RETRY"
+
+[connection signal="button_down" from="CanvasLayer/Button" to="." method="_on_button_button_down"]

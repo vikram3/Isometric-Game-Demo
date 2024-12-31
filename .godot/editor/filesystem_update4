@@ -1,0 +1,8 @@
+res://dungeon.tscn
+res://tileset/tileset.tres
+res://enemy/Enemygoblin.tscn
+res://player/goblin.tscn
+res://enemy/Enemygoblin.gd
+res://player/goblin.gd
+res://Scenes/game_over.gd
+res://Scenes/GameOver.tscn
